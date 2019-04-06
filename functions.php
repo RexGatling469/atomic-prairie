@@ -14,12 +14,12 @@ function get_navbar(){
                   'About' => '#',
                   'Contact' => '#',
                   'Features' => '#',
-                  'Example Sites' => '#',)
+                  'Example Sites' => '#',);
     $navbar = "<ul>";
     foreach($dict as $key => $value){
         $navbar .= '<li><a href="'.$value.'">'.$key.'</a></li>';
     }
-    $navbar = "</ul>"
+    $navbar = "</ul>";
     return $navbar;
 }
 
