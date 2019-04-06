@@ -9,5 +9,18 @@ function is_mobile(){
     return false;
 }
 
+function get_navbar(){
+    $dict = array('Main' => '#',
+                  'About' => '#',
+                  'Contact' => '#',
+                  'Features' => '#',
+                  'Example Sites' => '#',)
+    $navbar = "<ul>";
+    foreach($dict as $key => $value){
+        $navbar .= '<li><a href="'.$value.'">'.$key.'</a></li>';
+    }
+    $navbar = "</ul>"
+    return $navbar;
+}
 
 ?>
