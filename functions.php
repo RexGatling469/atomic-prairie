@@ -19,7 +19,7 @@ function get_navbar(){
     foreach($dict as $key => $value){
         $navbar .= '<li><a href="'.$value.'">'.$key.'</a></li>';
     }
-    $navbar = "</ul>";
+    $navbar .= "</ul>";
     return $navbar;
 }
 
