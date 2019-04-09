@@ -10,12 +10,12 @@ function is_mobile(){
 }
 
 function get_navbar(){
-    $dict = array('Main' => '#',
-                  'About' => '#',
-                  'Contact' => '#',
-                  'Features' => '#',
-                  'Example Sites' => '#',);
-    $navbar = "<ul>";
+    $dict = array('Main' => '/index.php',
+                  'About' => '/about.php',
+                  'Contact' => '/contact.php',
+                  'Features' => '/features.php',
+                  'Example Sites' => '/examples.php',);
+    $navbar = "<p class='banner'>Atomic Prairie</p><ul>";
     foreach($dict as $key => $value){
         $navbar .= '<li><a href="'.$value.'">'.$key.'</a></li>';
     }
