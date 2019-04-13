@@ -1,37 +1,39 @@
 *{
 padding: 0;
 margin: 0;
-font-family: Arial, Helvetica, sans-serif;
+font-family:"Open Sans",Arial,sans-serif;
 }
 
 html, body{
 height: 100vh;
-width:100vw;
+width:100%;
 }
+
 
 #wrap{
 height: auto;
 min-height: 100vh;
 overflow: hidden;
-min-width:100vw;
+min-width:100%;
+background-image: url('/images/ap.jpg');
+background-repeat: no-repeat;
+background-size: 100% auto;
+}
+
+#wrap img{
+min-height: 100%;
+min-width: 100%;
+display: fixed;
 }
 
 #navbar{
-height: 4vh;
-width: 100vw;
-background: linear-gradient(to bottom, rgb(212, 185, 221), rgb(222, 152, 236));
-box-shadow: 0px 5px 5px #aaaaaa;
-}
-
-#navbar .banner{
-font-size: 3vh;
-padding: 0.5vh 0;
-margin-left:5vw;
-margin-right:5vw;
-float:left;
+height: 8vh;
+width: 100%;
+background: none;
 }
 
 #navbar ul{
+margin-top: 1.5vh;
 list-style-type: none;
 overflow: hidden;
 display: inline-block;
@@ -43,17 +45,81 @@ display: inline-block;
 text-decoration: none;
 }
 
+#navbar ul .banner{
+font-size: 6vmin;
+margin-left: 20vw;
+margin-right: 10vw;
+float: left;
+height: 7vmin;
+color: #33ff33;
+}
+
 #navbar ul li a{
 display:inline-block;
-color: rgb(0, 0, 0);
+color: rgb(254, 254, 254);
 text-decoration: none;
-font-weight:bold;
 text-align: center;
-padding: 1vh 1vw;
+padding: 1vh 2vw;
 min-width:6vw;
+transition: color 0.3s linear;
+-webkit-transition: color 0.3s linear;
+-moz-transition: color 0.3s linear;
+}
+
+#navbar ul li a .lg{
+font-size: 2.5vmin;
+display:inline;
+padding:0;
+margin:0;
 }
 
 #navbar ul li a:hover{
-color: rgb(255, 255, 255);
-background: linear-gradient(to bottom, rgb(170, 93, 196), rgb(119, 1, 143));
+color: #33ff33;
+transition: color 0.3s linear;
+-webkit-transition: color 0.3s linear;
+-moz-transition: color 0.3s linear;
+}
+
+#main{
+color:rgb(254, 254, 254);
+background: none;
+height: 92vh;
+overflow:hidden;
+width:100%;
+}
+
+#main form{
+width: 40%;
+margin: 0 auto;
+background: #33ff33;
+box-shadow: 5px 5px 5px #999999;
+opacity: 0.5;
+}
+
+#main .lg{
+text-align: center;
+font-size:4vh;
+}
+
+#main input[type='text'], input[type='email'], input[type='date']{
+width: 80%;
+margin-left: 10%;
+height: 3vh;
+font-size: 2vh;
+margin-top:1vh;
+}
+
+#main form .short{
+width: 40%;
+}
+
+#main input[type='submit']{
+margin-right:70%;
+font-size:3vh;
+text-align:center;
+padding:1vh 1vw;
+color: #33ff33;
+background: rgb(254, 254, 254);
+box-shadow: 2px 2px 2px #999999;
+opacity: 1;
 }
