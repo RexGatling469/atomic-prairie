@@ -47,7 +47,7 @@ text-decoration: none;
 
 #navbar ul .banner{
 font-size: 6vmin;
-margin-left: 20vw;
+margin-left: 15vw;
 margin-right: 10vw;
 float: left;
 height: 7vmin;
@@ -163,4 +163,25 @@ padding:10px 10px;
 float: right;
 margin-right:8%;
 margin-top: 1vh;
+}
+
+#box{
+width: 40%;
+margin: 2.5% auto;
+background: rgba(51, 255, 51, 0.5);
+box-shadow: 5px 5px 5px #999999;
+padding: 2vmin;
+}
+
+#box .lg{
+font-size:3vh;
+display:inline-block;
+}
+
+#box li{
+margin-left:20px;
+}
+
+#box a{
+color: rgb(254, 254, 254);
 }
