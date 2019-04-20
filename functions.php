@@ -13,7 +13,7 @@ function get_navbar(){
                   '<span class="lg">I</span> NEED A WEBSITE' => '/features.php',
                   '<span class="lg">P</span>ORTFOLIO' => '/examples.php',
                   '<span class="lg">C</span>ONTACT' => '/contact.php',);
-    $navbar = '<ul><li class="banner">Atomic Prairie</li>';
+    $navbar = '<ul><li class="banner"><p class="lg">A</p>TOMIC PRAIRIE</li>';
     foreach($dict as $key => $value){
         $navbar .= '<li><a href="'.$value.'">'.$key.'</a></li>';
     }

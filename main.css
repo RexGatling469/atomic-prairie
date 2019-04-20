@@ -33,7 +33,7 @@ background: none;
 }
 
 #navbar ul{
-margin-top: 1.5vh;
+margin-top: 1vmin;
 list-style-type: none;
 overflow: hidden;
 display: inline-block;
@@ -52,6 +52,14 @@ margin-right: 10vw;
 float: left;
 height: 7vmin;
 color: #33ff33;
+margin-bottom:1vmin;
+}
+
+#navbar ul .banner .lg{
+font-size:7vmin;
+display:inline;
+padding:0;
+margin:0;
 }
 
 #navbar ul li a{
@@ -59,7 +67,7 @@ display:inline-block;
 color: rgb(254, 254, 254);
 text-decoration: none;
 text-align: center;
-padding: 1vh 2vw;
+padding: 2vh 2vw 0 2vw;
 min-width:6vw;
 transition: color 0.3s linear;
 -webkit-transition: color 0.3s linear;
@@ -166,7 +174,7 @@ margin-top: 1vh;
 }
 
 #box{
-width: 40%;
+width: 60%;
 margin: 2.5% auto;
 background: rgba(51, 255, 51, 0.5);
 box-shadow: 5px 5px 5px #999999;
@@ -184,4 +192,9 @@ margin-left:20px;
 
 #box a{
 color: rgb(254, 254, 254);
+}
+
+#box button{
+vertical-align: middle;
+display: inline;
 }
