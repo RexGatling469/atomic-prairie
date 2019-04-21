@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3mobile.css">
+    <link rel="stylesheet" type="text/css" href="bus_mob.css?v={RND}">
+    <title>
+        Your Business Here!
+    </title>
+    <style>
+        .mySlides {display:none}
+        .w3-left, .w3-right, .w3-badge {cursor:pointer}
+        .w3-badge {height:13px;width:13px;padding:0;margin:0px 6px;}
+    </style>
+    <script>
+        function openSidebar() {
+            document.getElementById("thisOne").innerHTML = '<nav class="w3-sidebar w3-bar-block w3-card" id="mySidebar"\
+    style="color:#FFFFFF;background: linear-gradient(to bottom, #00DDFF, #0077FF);background-color:#0077FF;">\
+<div class="w3-blue"><span onclick="closeSidebar()" class="w3-button w3-display-topright w3-large">X</span><h3>\
+<a href="#">Our Team</a><br></h3>\
+<h3><a href="#">Our Mission</a><br></h3>\
+<h3><a href="#" hreflang="en">Contact Us</a><br></h3>\
+<h3><a href="#" hreflang="en-us">About Us</a><br></h3></div></nav>';
+        }
+        
+        function closeSidebar() {
+            document.getElementById("thisOne").innerHTML = '';
+        }
+    </script>
+</head>
+<body onload="closeSidebar();">
+    <div id="wrap">
+        <div id="thisOne">
+        </div>
+        <div id="banner">{BANNER}</div>
+        <div id="bodytop">{BODYTOP}</div>
+        <div id="bodybot">{BODYBOT}</div>
+    </div>
+<script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+    
+    function currentDiv(n){
+      slideIndex = n;
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      for (i=0;i<x.length;i++) {
+        x[i].style.display = "none";
+      }
+      for (i=0;i<dots.length;i++){
+        dots[i].className = "w3-badge demo w3-border w3-transparent w3-hover-white";
+      }
+      x[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className = "w3-badge demo w3-border w3-white";
+    }
+    
+    function showDivs(n){
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      if (n>x.length) {slideIndex = 1;}
+      if (n<1) {slideIndex = x.length;}
+      for (i=0;i<x.length;i++) {
+        x[i].style.display = "none";
+      }
+      for (i=0;i<dots.length;i++){
+        dots[i].className = "w3-badge demo w3-border w3-transparent w3-hover-white";
+      }
+      x[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className = "w3-badge demo w3-border w3-white";
+      slideIndex++;
+      if (slideIndex > 3) {
+          slideIndex = 1
+      } 
+      setTimeout(showDivs, 2500);
+    }
+</script>
+</body>
+</html>
